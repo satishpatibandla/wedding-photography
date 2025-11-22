@@ -1,0 +1,74 @@
+.stats-section {
+    padding: var(--spacing-lg) 0;
+    background: linear-gradient(135deg, var(--color-maroon) 0%, #5a0000 100%);
+    position: relative;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.stat-item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
+    background: rgba(212, 175, 55, 0.3);
+}
+
+.stat-item:last-child::after {
+    display: none;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--color-gold);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+.stat-label {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--color-cream);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label-telugu {
+    font-size: 0.9rem;
+    color: rgba(253, 251, 247, 0.7);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .stat-item::after {
+        display: none;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+}

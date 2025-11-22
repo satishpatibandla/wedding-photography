@@ -1,0 +1,5 @@
+/* App specific styles if needed, otherwise global styles in index.css handle most things */
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}

@@ -1,0 +1,126 @@
+.testimonials-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-cream);
+    position: relative;
+}
+
+.testimonial-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    flex: 1;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.quote-icon {
+    color: var(--color-gold);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.rating {
+    margin-bottom: 1.5rem;
+}
+
+.star-icon {
+    color: var(--color-turmeric);
+    margin: 0 2px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.client-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.client-info h4 {
+    color: var(--color-maroon);
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 1px solid var(--color-gold);
+    color: var(--color-maroon);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--color-maroon);
+    color: var(--color-gold);
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: var(--color-maroon);
+}
+
+@media (max-width: 768px) {
+    .testimonial-carousel {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-btn {
+        display: none;
+        /* Hide arrows on mobile, rely on dots or swipe (future) */
+    }
+}
