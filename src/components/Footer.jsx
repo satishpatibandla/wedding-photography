@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="footer-contact">
                     <h3>Contact</h3>
                     <p>Hyderabad, Telangana</p>
-                    <p>+91 81979900000</p>
+                    <p>+91 8197997246</p>
                     <p>hello@bhagiphotography.com</p>
                 </div>
             </div>
